@@ -9,7 +9,6 @@ const countryInputEl = document.querySelector('input#search-box');
 const countryListInsert = document.querySelector('.country-list');
 const oneCountryInsert = document.querySelector('.country-info');
 
-console.log('hello');
 
 function createMarkup(toSearch) {
   fetchCountries(toSearch)
@@ -71,7 +70,6 @@ function onInputChange(event) {
   oneCountryInsert.innerHTML = '';
   if (event.target.value.trim() !== '') {
     const toSearch = event.target.value.trim();
-    console.log(toSearch);
     createMarkup(toSearch);
   } else {
     countryListInsert.innerHTML = '';

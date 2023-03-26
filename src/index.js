@@ -9,7 +9,7 @@ const countryInputEl = document.querySelector('input#search-box');
 const countryListInsert = document.querySelector('.country-list');
 const oneCountryInsert = document.querySelector('.country-info');
 
-console.log('hello-hello');
+console.log('hello');
 
 function createMarkup(toSearch) {
   fetchCountries(toSearch)
